@@ -9,7 +9,7 @@ int main(){
 
  float A = 0, B = 0, i,j,z[1760];
  char b[1760];
- printf("\n1b[2j");// clear screen
+ printf("\n1b[2j");// clear console
  for(;;){
   memset(b, 32, 1760);
   memset(z ,0, 1760);
@@ -30,7 +30,7 @@ int main(){
     b[o] = ".,-~:;=!*#$@:"[N > 0 ? N : 0];
    }
   }
-  printf("\x1b[H");// clear screen
+  printf("\x1b[H");// clear console
    for(k = 0; k< 1761;k++){
     putchar(k % 80 ? b[k]:10);
     A += 0.04;
